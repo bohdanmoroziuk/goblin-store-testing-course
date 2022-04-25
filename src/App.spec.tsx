@@ -5,6 +5,8 @@ import { Router } from "react-router-dom"
 
 import { App } from "./App"
 
+jest.mock('./Home', () => ({ Home: () => <div>Home</div> }))
+
 describe("<App />", () => {
   it("renders successfully", () => {
     const history = createMemoryHistory();
@@ -29,6 +31,6 @@ describe("<App />", () => {
       </Router>
     );
 
-    expect(container).toBeInTheDocument();
+    expect(container.innerHTML).toMatch('Home');
   });
 });
