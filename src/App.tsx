@@ -22,8 +22,11 @@ export const App = () => {
           <Route path="/order">
             <OrderSummary />
           </Route>
-          <Route path="/">
+          <Route exact path="/">
             <Home />
+          </Route>
+          <Route path="*">
+            Page not found
           </Route>
         </Switch>
       </div>
