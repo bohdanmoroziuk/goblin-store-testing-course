@@ -2,7 +2,7 @@ import React from "react"
 import { useCart } from "../CartContext"
 import { Product } from "../shared/types"
 
-interface ProductProps {
+export interface ProductProps {
   datum: Product;
 }
 

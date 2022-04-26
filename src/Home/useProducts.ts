@@ -1,8 +1,9 @@
 import React from "react"
 import { getProducts } from "../utils/api"
+import { Category } from "../shared/types"
 
 export const useProducts = () => {
-  const [categories, setCategories] = React.useState<any[]>([])
+  const [categories, setCategories] = React.useState<Category[]>([])
   const [isLoading, setIsLoading] = React.useState(true)
   const [error, setError] = React.useState(false)
 
@@ -12,7 +13,7 @@ export const useProducts = () => {
         const data = await getProducts()
         setCategories(data.categories || [])
       } catch (error) {
-        setError(error)
+        setError(true)
       }
       setIsLoading(false)
     }
