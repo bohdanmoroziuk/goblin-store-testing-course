@@ -1,7 +1,7 @@
 import React from "react"
 import { Product } from "../shared/types"
 
-interface CartItemProps {
+export interface CartItemProps {
   product: Product
   removeFromCart: (product: Product) => void
 }

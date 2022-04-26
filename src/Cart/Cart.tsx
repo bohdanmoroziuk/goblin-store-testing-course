@@ -3,8 +3,12 @@ import { Link } from "react-router-dom"
 import { useCart } from "../CartContext/CartContext"
 import { CartItem } from "./CartItem"
 
-export const Cart = () => {
-  const { products, removeFromCart, totalPrice } = useCart()
+export interface CartProps {
+  useCartHook?: typeof useCart;
+}
+
+export const Cart = ({ useCartHook = useCart }: CartProps) => {
+  const { products, removeFromCart, totalPrice } = useCartHook()
   if (!products.length) {
     return <>Your cart is empty. <Link to="/">Back to main page.</Link></>
   }
