@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CheckoutForm renders correctly 1`] = `
+<div>
+  <form>
+    <div
+      class="nes-field"
+    >
+      <label
+        for="name"
+      >
+        Cardholder's Name
+        :
+      </label>
+      <input
+        class="nes-input undefined"
+        name="name"
+        placeholder="John Smith"
+        type="text"
+      />
+    </div>
+    <div
+      class="nes-field"
+    >
+      <label
+        for="cardNumber"
+      >
+        Card Number
+        :
+      </label>
+      <input
+        autocomplete="cc-number"
+        class="nes-input undefined"
+        inputmode="numeric"
+        name="cardNumber"
+        placeholder="0000 0000 0000 0000"
+        type="tel"
+      />
+    </div>
+    <div
+      class="nes-field"
+    >
+      <label
+        for="expDate"
+      >
+        Expiration Date
+        :
+      </label>
+      <input
+        class="nes-input undefined"
+        name="expDate"
+        type="month"
+      />
+    </div>
+    <div
+      class="nes-field"
+    >
+      <label
+        for="cvv"
+      >
+        CVV
+        :
+      </label>
+      <input
+        class="nes-input undefined"
+        name="cvv"
+        placeholder="000"
+        type="number"
+      />
+    </div>
+    <button
+      class="nes-btn is-primary"
+    >
+      Place order
+    </button>
+  </form>
+</div>
+`;
