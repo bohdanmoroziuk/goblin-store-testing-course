@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CheckoutList renders list of products 1`] = `
+<div>
+  <ul
+    class="nes-list is-circle"
+  >
+    <li>
+      Foo
+    </li>
+    <li>
+      Bar
+    </li>
+  </ul>
+</div>
+`;
