@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormField renders correctly 1`] = `
+<div>
+  <div
+    class="nes-field"
+  >
+    <label
+      for="foo"
+    >
+      Foo label
+      :
+    </label>
+    <input
+      class="nes-input undefined"
+      data-testid="input"
+      name="foo"
+    />
+  </div>
+</div>
+`;
