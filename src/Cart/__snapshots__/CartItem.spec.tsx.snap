@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CartItem renders correctly 1`] = `
+<div>
+  <div
+    class="cart-item"
+  >
+    <img
+      alt="Foo"
+      height="64px"
+      src="/images/basic_spear.png"
+      style="image-rendering: pixelated;"
+      width="64px"
+    />
+    <p>
+      Foo
+    </p>
+    <p>
+      55
+       Zm
+    </p>
+    <button
+      class="nes-btn is-error"
+    >
+      Remove
+    </button>
+  </div>
+</div>
+`;
