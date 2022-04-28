@@ -2,7 +2,7 @@ import React from "react"
 import { getProducts } from "../utils/api"
 import { Category } from "../shared/types"
 
-export const useProducts = () => {
+export const useProducts = (apiGetProducts = getProducts) => {
   const [categories, setCategories] = React.useState<Category[]>([])
   const [isLoading, setIsLoading] = React.useState(true)
   const [error, setError] = React.useState(false)
@@ -10,7 +10,7 @@ export const useProducts = () => {
   React.useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const data = await getProducts()
+        const data = await apiGetProducts()
         setCategories(data.categories || [])
       } catch (error) {
         setError(true)
@@ -18,7 +18,7 @@ export const useProducts = () => {
       setIsLoading(false)
     }
     fetchProducts()
-  }, [])
+  }, [apiGetProducts])
 
   return { categories, isLoading, error }
 }
