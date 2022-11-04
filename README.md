@@ -1,5 +1,7 @@
 # Goblin Store Testing Course
 
+> Goblin Store app testing course using the Jest and React Testing Library.
+
 ## Available Scripts
 
 In the project directory, you can run:
